@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<!-- Auto-converted from Webots PROTO -->
+<robot name="robotti">
+  <link name="base_link"/>
+  <link name="link_0">
+    <visual>
+      <origin xyz="0.4850 0.0000 1.0132" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/boom.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_1">
+    <visual>
+      <origin xyz="0.4850 0.0000 1.0132" rpy="3.1416 0.0000 0.0000"/>
+      <geometry><cylinder radius="0.09" length="3.0"/></geometry>
+      <material name=""><color rgba="0.26 0.3 0.38 1.0"/></material>
+    </visual>
+  </link>
+  <link name="link_2">
+    <visual>
+      <origin xyz="0.8808 0.0000 1.1723" rpy="0.0000 0.1963 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/lidar_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_3">
+    <visual>
+      <origin xyz="0.8872 0.0000 1.2046" rpy="0.0000 0.1963 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/VLP16.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_4">
+    <visual>
+      <origin xyz="0.7000 0.0000 1.9263" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/gnss_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_5">
+    <visual>
+      <origin xyz="0.7000 0.0000 1.9263" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/DGPSs.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_6">
+  </link>
+  <link name="link_7">
+    <visual>
+      <origin xyz="0.8450 0.0000 0.6932" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/hitch.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_8">
+    <visual>
+      <origin xyz="0.2733 0.0000 0.7353" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/implement_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_9">
+    <visual>
+      <origin xyz="1.2185 0.0000 0.9882" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/front_bumper.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_10">
+    <visual>
+      <origin xyz="1.2185 0.0000 0.9882" rpy="3.1416 0.0000 0.0000"/>
+      <geometry><cylinder radius="0.009" length="3.0"/></geometry>
+      <material name=""><color rgba="0.8 0.0 0.0 1.0"/></material>
+    </visual>
+  </link>
+  <link name="link_11">
+    <visual>
+      <origin xyz="1.1650 0.0000 1.0132" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_rack.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_12">
+    <visual>
+      <origin xyz="1.1110 2.2050 1.0343" rpy="3.1416 1.5700 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_13">
+    <visual>
+      <origin xyz="1.1110 2.2050 1.0343" rpy="3.1416 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_14">
+    <visual>
+      <origin xyz="1.1110 0.7350 1.0343" rpy="3.1416 1.5700 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_15">
+    <visual>
+      <origin xyz="1.1110 0.7350 1.0343" rpy="3.1416 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_16">
+    <visual>
+      <origin xyz="1.1110 -0.7350 1.0343" rpy="3.1416 1.5700 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_17">
+    <visual>
+      <origin xyz="1.1110 -0.7350 1.0343" rpy="3.1416 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_18">
+    <visual>
+      <origin xyz="1.1110 -2.2050 1.0343" rpy="3.1416 1.5700 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_19">
+    <visual>
+      <origin xyz="1.1110 -2.2050 1.0343" rpy="3.1416 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_20">
+    <visual>
+      <origin xyz="1.7734 0.0000 1.9426" rpy="3.1416 1.1781 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_21">
+    <visual>
+      <origin xyz="1.8038 0.0000 1.9300" rpy="3.1416 1.1781 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_22">
+    <visual>
+      <origin xyz="1.4143 0.0000 1.7323" rpy="0.0000 1.0472 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_23">
+    <visual>
+      <origin xyz="1.4428 0.0000 1.7488" rpy="0.0000 1.0472 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_24">
+    <visual>
+      <origin xyz="-0.0003 0.0000 2.1850" rpy="0.0000 0.0000 -0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_25">
+    <visual>
+      <origin xyz="-0.0003 0.0000 2.2180" rpy="0.0000 0.0000 -0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_26">
+    <visual>
+      <origin xyz="0.9700 -3.0000 2.0265" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/module.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_27">
+    <visual>
+      <origin xyz="-0.7360 -3.7855 2.0015" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/module_bumper.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_28">
+  </link>
+  <link name="link_29">
+    <visual>
+      <origin xyz="1.8400 -3.3900 1.8015" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_30">
+    <visual>
+      <origin xyz="1.8400 -3.3900 1.2233" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_31">
+    <visual>
+      <origin xyz="1.8400 -3.3700 1.2123" rpy="-0.0000 0.0000 0.0000"/>
+      <geometry><cylinder radius="0.071" length="0.12"/></geometry>
+      <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
+    </visual>
+  </link>
+  <link name="link_32">
+  </link>
+  <link name="link_33">
+    <visual>
+      <origin xyz="1.8400 -3.1300 1.2033" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_34">
+  </link>
+  <link name="link_35">
+    <visual>
+      <origin xyz="-2.8100 -3.3900 1.8015" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_36">
+    <visual>
+      <origin xyz="-2.8100 -3.3900 1.2233" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_37">
+    <visual>
+      <origin xyz="-2.8100 -3.3700 1.2123" rpy="-0.0000 0.0000 0.0000"/>
+      <geometry><cylinder radius="0.071" length="0.12"/></geometry>
+      <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
+    </visual>
+  </link>
+  <link name="link_38">
+  </link>
+  <link name="link_39">
+    <visual>
+      <origin xyz="-2.8100 -3.1300 1.2033" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_40">
+  </link>
+  <joint name="joint_0" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_0"/>
+  </joint>
+  <joint name="joint_1" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
+  </joint>
+  <joint name="joint_2" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_2"/>
+  </joint>
+  <joint name="joint_3" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_3"/>
+  </joint>
+  <joint name="joint_4" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_4"/>
+  </joint>
+  <joint name="joint_5" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_5"/>
+  </joint>
+  <joint name="joint_6" type="continuous">
+    <origin xyz="0.1800 0.0000 -0.1600" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_6"/>
+    <axis xyz="0.0000 1.0000 0.0000"/>
+  </joint>
+  <joint name="joint_7" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_6"/>
+    <child link="link_7"/>
+  </joint>
+  <joint name="joint_8" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_6"/>
+    <child link="link_8"/>
+  </joint>
+  <joint name="joint_9" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_9"/>
+  </joint>
+  <joint name="joint_10" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_10"/>
+  </joint>
+  <joint name="joint_11" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_11"/>
+  </joint>
+  <joint name="joint_12" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_12"/>
+  </joint>
+  <joint name="joint_13" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_13"/>
+  </joint>
+  <joint name="joint_14" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_14"/>
+  </joint>
+  <joint name="joint_15" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_15"/>
+  </joint>
+  <joint name="joint_16" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_16"/>
+  </joint>
+  <joint name="joint_17" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_17"/>
+  </joint>
+  <joint name="joint_18" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_18"/>
+  </joint>
+  <joint name="joint_19" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_19"/>
+  </joint>
+  <joint name="joint_20" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_20"/>
+  </joint>
+  <joint name="joint_21" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_21"/>
+  </joint>
+  <joint name="joint_22" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_22"/>
+  </joint>
+  <joint name="joint_23" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_23"/>
+  </joint>
+  <joint name="joint_24" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_24"/>
+  </joint>
+  <joint name="joint_25" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_25"/>
+  </joint>
+  <joint name="joint_26" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_26"/>
+  </joint>
+  <joint name="joint_27" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_27"/>
+  </joint>
+  <joint name="joint_28" type="continuous">
+    <origin xyz="0.2900 -0.1300 -0.0750" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_28"/>
+    <axis xyz="0.0000 0.0000 1.0000"/>
+  </joint>
+  <joint name="joint_29" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_28"/>
+    <child link="link_29"/>
+  </joint>
+  <joint name="joint_30" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_28"/>
+    <child link="link_30"/>
+  </joint>
+  <joint name="joint_31" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_28"/>
+    <child link="link_31"/>
+  </joint>
+  <joint name="joint_32" type="continuous">
+    <origin xyz="0.0000 0.1300 -0.0100" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_28"/>
+    <child link="link_32"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+  <joint name="joint_33" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_32"/>
+    <child link="link_33"/>
+  </joint>
+  <joint name="joint_34" type="continuous">
+    <origin xyz="-1.2600 -0.1300 -0.0750" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_34"/>
+    <axis xyz="0.0000 0.0000 1.0000"/>
+  </joint>
+  <joint name="joint_35" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_34"/>
+    <child link="link_35"/>
+  </joint>
+  <joint name="joint_36" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_34"/>
+    <child link="link_36"/>
+  </joint>
+  <joint name="joint_37" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_34"/>
+    <child link="link_37"/>
+  </joint>
+  <joint name="joint_38" type="continuous">
+    <origin xyz="0.0000 0.1300 -0.0100" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_34"/>
+    <child link="link_38"/>
+    <axis xyz="0.0000 -1.0000 0.0000"/>
+  </joint>
+  <joint name="joint_39" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="link_38"/>
+    <child link="link_39"/>
+  </joint>
+  <joint name="joint_40" type="continuous">
+    <origin xyz="0.4850 1.5000 1.0132" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_40"/>
+    <axis xyz="0.0000 1.0000 0.0000"/>
+  </joint>
+</robot>

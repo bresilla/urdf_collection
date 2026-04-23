@@ -9,10 +9,10 @@
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
   <material name="dark">
-    <color rgba="0.3 0.3 0.3 1.0"/>
+    <color rgba="0.08 0.08 0.08 1.0"/>
   </material>
   <material name="light_black">
-    <color rgba="0.4 0.4 0.4 1.0"/>
+    <color rgba="0.15 0.15 0.2 1.0"/>
   </material>
   <material name="blue">
     <color rgba="0.0 0.0 0.8 1.0"/>
@@ -339,7 +339,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="dark"/>
+      <material name="orange"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.015 0 -0.0065"/>

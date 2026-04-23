@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<!--
+    Arm-only extract of the Artemy robot (a mobile manipulator). The
+    original `artemy.urdf` sits on a differential-drive base and wraps
+    a Denso VS-060 6-DOF arm; we keep only the arm's 6 links + joints
+    (base_link, J1..J6, joint_1..joint_6). The `hand_root_link` (a
+    custom gripper) is dropped because its mesh ships with the proprietary
+    `artemy_robot_descriptions` package and isn't available on its own.
+
+    Visual + collision meshes are the Denso-published VS-060 DAE files
+    (github.com/DENSORobot/denso_robot_ros, denso_robot_descriptions
+    package), re-hosted here under `meshes/vs060/`.
+-->
+<robot name="artemy_arm">
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/base_link.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/base_link.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="J1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J1.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J1.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <limit effort="1" lower="-2.96706" upper="2.96706" velocity="3.92699081698724"/>
+    <origin rpy="0 0 0" xyz="0.000000 0.000000 0.181500"/>
+    <parent link="base_link"/>
+    <child link="J1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="J2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J2.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J2.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_2" type="revolute">
+    <limit effort="1" lower="-2.0943951023931953" upper="2.0943951023931953" velocity="2.61799387799149"/>
+    <origin rpy="0 0 0" xyz="0.000000 0.000000 0.163500"/>
+    <parent link="J1"/>
+    <child link="J2"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+  <link name="J3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J3.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J3.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_3" type="revolute">
+    <limit effort="1" lower="-2.181661564992912" upper="2.705260340591211" velocity="2.85832571599111"/>
+    <origin rpy="0 0 0" xyz="0.000000 0.000000 0.305000"/>
+    <parent link="J2"/>
+    <child link="J3"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+  <link name="J4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J4.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J4.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_4" type="revolute">
+    <limit effort="1" lower="-4.71238898038469" upper="4.71238898038469" velocity="3.92699081698724"/>
+    <origin rpy="0 0 0" xyz="-0.010000 0.000000 0.164500"/>
+    <parent link="J3"/>
+    <child link="J4"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="J5">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J5.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J5.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_5" type="revolute">
+    <limit effort="1" lower="-2.0943951023931953" upper="2.0943951023931953" velocity="3.02168853397778"/>
+    <origin rpy="0 0 0" xyz="0.000000 0.000000 0.135500"/>
+    <parent link="J4"/>
+    <child link="J5"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+  <link name="J6">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J6.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://artemy_arm/meshes/vs060/J6.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_6" type="revolute">
+    <limit effort="1" lower="-6.283185307179586" upper="6.283185307179586" velocity="6.28318530717959"/>
+    <origin rpy="0 0 0" xyz="0.000000 0.000000 0.070000"/>
+    <parent link="J5"/>
+    <child link="J6"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+</robot>

@@ -10,7 +10,7 @@
   </link>
   <link name="link_1">
     <visual>
-      <origin xyz="0.4850 0.0000 1.0132" rpy="3.1416 0.0000 0.0000"/>
+      <origin xyz="0.4850 0.0000 1.0132" rpy="-0.0000 0.0000 0.0000"/>
       <geometry><cylinder radius="0.09" length="3.0"/></geometry>
       <material name=""><color rgba="0.26 0.3 0.38 1.0"/></material>
     </visual>
@@ -61,7 +61,7 @@
   </link>
   <link name="link_10">
     <visual>
-      <origin xyz="1.2185 0.0000 0.9882" rpy="3.1416 0.0000 0.0000"/>
+      <origin xyz="1.2185 0.0000 0.9882" rpy="-0.0000 0.0000 0.0000"/>
       <geometry><cylinder radius="0.009" length="3.0"/></geometry>
       <material name=""><color rgba="0.8 0.0 0.0 1.0"/></material>
     </visual>
@@ -184,7 +184,7 @@
   </link>
   <link name="link_31">
     <visual>
-      <origin xyz="1.8400 -3.3700 1.2123" rpy="-0.0000 0.0000 0.0000"/>
+      <origin xyz="1.8400 -3.3700 1.2123" rpy="3.1416 0.0000 -0.0000"/>
       <geometry><cylinder radius="0.071" length="0.12"/></geometry>
       <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
     </visual>
@@ -213,7 +213,7 @@
   </link>
   <link name="link_37">
     <visual>
-      <origin xyz="-2.8100 -3.3700 1.2123" rpy="-0.0000 0.0000 0.0000"/>
+      <origin xyz="-2.8100 -3.3700 1.2123" rpy="3.1416 0.0000 -0.0000"/>
       <geometry><cylinder radius="0.071" length="0.12"/></geometry>
       <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
     </visual>

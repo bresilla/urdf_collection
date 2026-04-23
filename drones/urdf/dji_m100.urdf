@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- dji_m100: mesh from TareqAlqutami/dji_ros_simulator (dji_drone_description). Single body mesh; arms+props are already in the model. -->
+<robot name="dji_m100">
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/dji_m100.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/dji_m100.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

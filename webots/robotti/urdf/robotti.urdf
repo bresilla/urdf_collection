@@ -40,193 +40,243 @@
     </visual>
   </link>
   <link name="link_6">
-  </link>
-  <link name="link_7">
     <visual>
-      <origin xyz="0.8450 0.0000 0.6932" rpy="0.0000 0.0000 0.0000"/>
+      <origin xyz="0.6650 0.0000 0.8532" rpy="0.0000 0.0000 0.0000"/>
       <geometry><mesh filename="package://robotti/meshes/hitch.dae"/></geometry>
     </visual>
   </link>
-  <link name="link_8">
+  <link name="link_7">
     <visual>
-      <origin xyz="0.2733 0.0000 0.7353" rpy="0.0000 0.0000 0.0000"/>
+      <origin xyz="0.0933 0.0000 0.8953" rpy="0.0000 0.0000 0.0000"/>
       <geometry><mesh filename="package://robotti/meshes/implement_mount.dae"/></geometry>
     </visual>
   </link>
-  <link name="link_9">
+  <link name="link_8">
     <visual>
       <origin xyz="1.2185 0.0000 0.9882" rpy="0.0000 0.0000 0.0000"/>
       <geometry><mesh filename="package://robotti/meshes/front_bumper.dae"/></geometry>
     </visual>
   </link>
-  <link name="link_10">
+  <link name="link_9">
     <visual>
       <origin xyz="1.2185 0.0000 0.9882" rpy="-0.0000 0.0000 0.0000"/>
       <geometry><cylinder radius="0.009" length="3.0"/></geometry>
       <material name=""><color rgba="0.8 0.0 0.0 1.0"/></material>
     </visual>
   </link>
-  <link name="link_11">
+  <link name="link_10">
     <visual>
       <origin xyz="1.1650 0.0000 1.0132" rpy="0.0000 0.0000 0.0000"/>
       <geometry><mesh filename="package://robotti/meshes/plant_camera_rack.dae"/></geometry>
     </visual>
   </link>
+  <link name="link_11">
+    <visual>
+      <origin xyz="1.1440 1.1025 1.0133" rpy="0.0000 0.0008 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+    </visual>
+  </link>
   <link name="link_12">
     <visual>
-      <origin xyz="1.1110 2.2050 1.0343" rpy="3.1416 1.5700 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+      <origin xyz="1.1440 1.1025 1.0133" rpy="0.0000 1.5708 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_13">
     <visual>
-      <origin xyz="1.1110 2.2050 1.0343" rpy="3.1416 0.0000 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="1.1440 0.3675 1.0133" rpy="0.0000 0.0008 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_14">
     <visual>
-      <origin xyz="1.1110 0.7350 1.0343" rpy="3.1416 1.5700 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+      <origin xyz="1.1440 0.3675 1.0133" rpy="0.0000 1.5708 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_15">
     <visual>
-      <origin xyz="1.1110 0.7350 1.0343" rpy="3.1416 0.0000 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="1.1440 -0.3675 1.0133" rpy="0.0000 0.0008 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_16">
     <visual>
-      <origin xyz="1.1110 -0.7350 1.0343" rpy="3.1416 1.5700 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+      <origin xyz="1.1440 -0.3675 1.0133" rpy="0.0000 1.5708 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_17">
     <visual>
-      <origin xyz="1.1110 -0.7350 1.0343" rpy="3.1416 0.0000 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="1.1440 -1.1025 1.0133" rpy="0.0000 0.0008 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_18">
     <visual>
-      <origin xyz="1.1110 -2.2050 1.0343" rpy="3.1416 1.5700 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/plant_camera_mount.dae"/></geometry>
+      <origin xyz="1.1440 -1.1025 1.0133" rpy="0.0000 1.5708 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_19">
     <visual>
-      <origin xyz="1.1110 -2.2050 1.0343" rpy="3.1416 0.0000 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="0.8808 0.0000 1.8222" rpy="0.0000 0.9817 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_20">
     <visual>
-      <origin xyz="1.7734 0.0000 1.9426" rpy="3.1416 1.1781 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
+      <origin xyz="0.9082 0.0000 1.8406" rpy="0.0000 0.9817 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_21">
     <visual>
-      <origin xyz="1.8038 0.0000 1.9300" rpy="3.1416 1.1781 3.1416"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="0.8533 0.0000 1.4972" rpy="0.0000 0.5236 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_22">
     <visual>
-      <origin xyz="1.4143 0.0000 1.7323" rpy="0.0000 1.0472 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
+      <origin xyz="0.8698 0.0000 1.5258" rpy="0.0000 0.5236 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_23">
     <visual>
-      <origin xyz="1.4428 0.0000 1.7488" rpy="0.0000 1.0472 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="0.5790 0.0000 1.7386" rpy="0.0000 0.7854 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_24">
     <visual>
-      <origin xyz="-0.0003 0.0000 2.1850" rpy="0.0000 0.0000 -0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/camera_mount.dae"/></geometry>
+      <origin xyz="0.5557 0.0000 1.7619" rpy="0.0000 0.7854 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
     </visual>
   </link>
   <link name="link_25">
     <visual>
-      <origin xyz="-0.0003 0.0000 2.2180" rpy="0.0000 0.0000 -0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/camera.dae"/></geometry>
+      <origin xyz="0.4850 -1.5000 1.0132" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/module.dae"/></geometry>
     </visual>
   </link>
   <link name="link_26">
     <visual>
-      <origin xyz="0.9700 -3.0000 2.0265" rpy="0.0000 0.0000 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/module.dae"/></geometry>
+      <origin xyz="-1.2210 -2.2855 0.9882" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/module_bumper.dae"/></geometry>
     </visual>
   </link>
   <link name="link_27">
     <visual>
-      <origin xyz="-0.7360 -3.7855 2.0015" rpy="0.0000 0.0000 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/module_bumper.dae"/></geometry>
+      <origin xyz="0.7750 -1.6300 0.9383" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
     </visual>
   </link>
   <link name="link_28">
+    <visual>
+      <origin xyz="0.7750 -1.6300 0.3600" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+    </visual>
   </link>
   <link name="link_29">
     <visual>
-      <origin xyz="1.8400 -3.3900 1.8015" rpy="0.0000 0.0000 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+      <origin xyz="0.7750 -1.6100 0.3490" rpy="3.1416 0.0000 -0.0000"/>
+      <geometry><cylinder radius="0.071" length="0.12"/></geometry>
+      <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
     </visual>
   </link>
   <link name="link_30">
     <visual>
-      <origin xyz="1.8400 -3.3900 1.2233" rpy="0.0000 0.0000 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+      <origin xyz="0.7750 -1.5000 0.3500" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel.dae"/></geometry>
     </visual>
   </link>
   <link name="link_31">
     <visual>
-      <origin xyz="1.8400 -3.3700 1.2123" rpy="3.1416 0.0000 -0.0000"/>
+      <origin xyz="-0.7750 -1.6300 0.9383" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_32">
+    <visual>
+      <origin xyz="-0.7750 -1.6300 0.3600" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_33">
+    <visual>
+      <origin xyz="-0.7750 -1.6100 0.3490" rpy="3.1416 0.0000 -0.0000"/>
       <geometry><cylinder radius="0.071" length="0.12"/></geometry>
       <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
     </visual>
   </link>
-  <link name="link_32">
-  </link>
-  <link name="link_33">
+  <link name="link_34">
     <visual>
-      <origin xyz="1.8400 -3.1300 1.2033" rpy="0.0000 0.0000 0.0000"/>
+      <origin xyz="-0.7750 -1.5000 0.3500" rpy="0.0000 0.0000 0.0000"/>
       <geometry><mesh filename="package://robotti/meshes/wheel.dae"/></geometry>
     </visual>
   </link>
-  <link name="link_34">
-  </link>
   <link name="link_35">
     <visual>
-      <origin xyz="-2.8100 -3.3900 1.8015" rpy="0.0000 0.0000 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+      <origin xyz="0.4850 2.2260 1.0132" rpy="0.0000 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/module.dae"/></geometry>
     </visual>
   </link>
   <link name="link_36">
     <visual>
-      <origin xyz="-2.8100 -3.3900 1.2233" rpy="0.0000 0.0000 0.0000"/>
-      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+      <origin xyz="-1.2210 2.2855 0.9882" rpy="3.1416 0.0000 0.0000"/>
+      <geometry><mesh filename="package://robotti/meshes/module_bumper.dae"/></geometry>
     </visual>
   </link>
   <link name="link_37">
     <visual>
-      <origin xyz="-2.8100 -3.3700 1.2123" rpy="3.1416 0.0000 -0.0000"/>
+      <origin xyz="0.7750 1.6300 0.9383" rpy="0.0000 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_38">
+    <visual>
+      <origin xyz="0.7750 1.6300 0.3600" rpy="0.0000 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_39">
+    <visual>
+      <origin xyz="0.7750 1.6100 0.3490" rpy="3.1416 0.0000 3.1416"/>
       <geometry><cylinder radius="0.071" length="0.12"/></geometry>
       <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
     </visual>
   </link>
-  <link name="link_38">
-  </link>
-  <link name="link_39">
+  <link name="link_40">
     <visual>
-      <origin xyz="-2.8100 -3.1300 1.2033" rpy="0.0000 0.0000 0.0000"/>
+      <origin xyz="0.7750 1.5000 0.3500" rpy="0.0000 0.0000 3.1416"/>
       <geometry><mesh filename="package://robotti/meshes/wheel.dae"/></geometry>
     </visual>
   </link>
-  <link name="link_40">
+  <link name="link_41">
+    <visual>
+      <origin xyz="-0.7750 1.6300 0.9383" rpy="0.0000 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_mount.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_42">
+    <visual>
+      <origin xyz="-0.7750 1.6300 0.3600" rpy="0.0000 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel_motor.dae"/></geometry>
+    </visual>
+  </link>
+  <link name="link_43">
+    <visual>
+      <origin xyz="-0.7750 1.6100 0.3490" rpy="3.1416 0.0000 3.1416"/>
+      <geometry><cylinder radius="0.071" length="0.12"/></geometry>
+      <material name=""><color rgba="0.123 0.147 0.17 1.0"/></material>
+    </visual>
+  </link>
+  <link name="link_44">
+    <visual>
+      <origin xyz="-0.7750 1.5000 0.3500" rpy="0.0000 0.0000 3.1416"/>
+      <geometry><mesh filename="package://robotti/meshes/wheel.dae"/></geometry>
+    </visual>
   </link>
   <joint name="joint_0" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
@@ -258,20 +308,19 @@
     <parent link="base_link"/>
     <child link="link_5"/>
   </joint>
-  <joint name="joint_6" type="continuous">
-    <origin xyz="0.1800 0.0000 -0.1600" rpy="0.0000 0.0000 0.0000"/>
+  <joint name="joint_6" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
     <parent link="base_link"/>
     <child link="link_6"/>
-    <axis xyz="0.0000 1.0000 0.0000"/>
   </joint>
   <joint name="joint_7" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_6"/>
+    <parent link="base_link"/>
     <child link="link_7"/>
   </joint>
   <joint name="joint_8" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_6"/>
+    <parent link="base_link"/>
     <child link="link_8"/>
   </joint>
   <joint name="joint_9" type="fixed">
@@ -369,74 +418,89 @@
     <parent link="base_link"/>
     <child link="link_27"/>
   </joint>
-  <joint name="joint_28" type="continuous">
-    <origin xyz="0.2900 -0.1300 -0.0750" rpy="0.0000 0.0000 0.0000"/>
+  <joint name="joint_28" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
     <parent link="base_link"/>
     <child link="link_28"/>
-    <axis xyz="0.0000 0.0000 1.0000"/>
   </joint>
   <joint name="joint_29" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_28"/>
+    <parent link="base_link"/>
     <child link="link_29"/>
   </joint>
   <joint name="joint_30" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_28"/>
+    <parent link="base_link"/>
     <child link="link_30"/>
   </joint>
   <joint name="joint_31" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_28"/>
+    <parent link="base_link"/>
     <child link="link_31"/>
   </joint>
-  <joint name="joint_32" type="continuous">
-    <origin xyz="0.0000 0.1300 -0.0100" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_28"/>
+  <joint name="joint_32" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
     <child link="link_32"/>
-    <axis xyz="0.0000 -1.0000 0.0000"/>
   </joint>
   <joint name="joint_33" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_32"/>
+    <parent link="base_link"/>
     <child link="link_33"/>
   </joint>
-  <joint name="joint_34" type="continuous">
-    <origin xyz="-1.2600 -0.1300 -0.0750" rpy="0.0000 0.0000 0.0000"/>
+  <joint name="joint_34" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
     <parent link="base_link"/>
     <child link="link_34"/>
-    <axis xyz="0.0000 0.0000 1.0000"/>
   </joint>
   <joint name="joint_35" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_34"/>
+    <parent link="base_link"/>
     <child link="link_35"/>
   </joint>
   <joint name="joint_36" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_34"/>
+    <parent link="base_link"/>
     <child link="link_36"/>
   </joint>
   <joint name="joint_37" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_34"/>
+    <parent link="base_link"/>
     <child link="link_37"/>
   </joint>
-  <joint name="joint_38" type="continuous">
-    <origin xyz="0.0000 0.1300 -0.0100" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_34"/>
+  <joint name="joint_38" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
     <child link="link_38"/>
-    <axis xyz="0.0000 -1.0000 0.0000"/>
   </joint>
   <joint name="joint_39" type="fixed">
     <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
-    <parent link="link_38"/>
+    <parent link="base_link"/>
     <child link="link_39"/>
   </joint>
-  <joint name="joint_40" type="continuous">
-    <origin xyz="0.4850 1.5000 1.0132" rpy="0.0000 0.0000 0.0000"/>
+  <joint name="joint_40" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
     <parent link="base_link"/>
     <child link="link_40"/>
-    <axis xyz="0.0000 1.0000 0.0000"/>
+  </joint>
+  <joint name="joint_41" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_41"/>
+  </joint>
+  <joint name="joint_42" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_42"/>
+  </joint>
+  <joint name="joint_43" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_43"/>
+  </joint>
+  <joint name="joint_44" type="fixed">
+    <origin xyz="0.0000 0.0000 0.0000" rpy="0.0000 0.0000 0.0000"/>
+    <parent link="base_link"/>
+    <child link="link_44"/>
   </joint>
 </robot>

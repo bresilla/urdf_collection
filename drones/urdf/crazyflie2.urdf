@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- crazyflie2: body mesh from RotorS (ethz-asl/rotors_simulator) -->
+<!-- crazyflie2: body + rotors from RotorS (arm lengths per-drone matching rotors_description xacro) -->
 <robot name="crazyflie2">
   <link name="base_link">
     <visual>
@@ -15,4 +15,60 @@
       </geometry>
     </collision>
   </link>
+  <link name="rotor_0_front_right">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_ccw.dae" scale="0.023 0.023 0.023"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="rotor_0_front_right_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_0_front_right"/>
+    <origin rpy="0 0 0" xyz="0.0397 -0.0397 0.005"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_1_back_left">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_ccw.dae" scale="0.023 0.023 0.023"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="rotor_1_back_left_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_1_back_left"/>
+    <origin rpy="0 0 0" xyz="-0.0397 0.0397 0.005"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_2_front_left">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_cw.dae" scale="0.023 0.023 0.023"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="rotor_2_front_left_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_2_front_left"/>
+    <origin rpy="0 0 0" xyz="0.0397 0.0397 0.005"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="rotor_3_back_right">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_cw.dae" scale="0.023 0.023 0.023"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="rotor_3_back_right_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rotor_3_back_right"/>
+    <origin rpy="0 0 0" xyz="-0.0397 -0.0397 0.005"/>
+    <axis xyz="0 0 1"/>
+  </joint>
 </robot>

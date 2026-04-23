@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!-- firefly: body mesh from RotorS (ethz-asl/rotors_simulator) -->
+<robot name="firefly">
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/firefly.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/firefly.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="prop_0">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_cw.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="prop_0_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="prop_0"/>
+    <origin rpy="0 0 0" xyz="0.25 0.25 0.02"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="prop_1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_ccw.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="prop_1_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="prop_1"/>
+    <origin rpy="0 0 0" xyz="0.25 -0.25 0.02"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="prop_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_cw.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="prop_2_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="prop_2"/>
+    <origin rpy="0 0 0" xyz="-0.25 -0.25 0.02"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="prop_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://drones/meshes/propeller_ccw.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="prop_3_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="prop_3"/>
+    <origin rpy="0 0 0" xyz="-0.25 0.25 0.02"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+</robot>
